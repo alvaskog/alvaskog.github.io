@@ -1,0 +1,129 @@
+* {
+  box-sizing: border-box;
+}
+html{
+  font-size: 20px;
+}
+body {
+  background-color: #fff;
+  margin: 0px;
+  background-image: url("#");
+  background-repeat: no-repeat;
+  background-position: center center;
+}
+h1, h2, h3 {
+  font-family: Avenir, Helvetica, sans-serif;
+  font-weight: 500;
+}
+.namnochtitle {
+   z-index: 1;
+}
+.namn {
+  color: black;
+  height: 80px;
+  padding-left: 30px;
+  font-size: 1.35rem;
+  margin-top: 0px;
+  padding-top: 0px;
+  top: 7px;
+  position: fixed;
+ 
+  
+}
+
+.title {
+  color: black;
+  padding-left: 30px;
+  font-size: 12px;
+  padding-top: 0px;
+  top: 95px;
+  position: fixed;
+  
+}
+a:link {
+  color: black;
+  background-color: transparent;
+  text-decoration: none ;
+}
+a:hover {
+  color: grey;
+  background-color: black;
+  text-decoration: none ;
+}
+
+a {
+  color: inherit;
+}
+  
+p {
+  position: fixed;
+  font-weight: 100;
+}
+p1 {
+  
+  position: fixed;
+  padding-top: 90px;
+  font-weight: 100;
+}
+
+.contact {
+  color: black;
+  padding-left: 30px;
+  font-size: 16px;
+  position: fixed;
+  padding-top: 40px;
+  }
+
+
+.work {
+  padding-top: 180px;
+  font-family: Avenir, Helvteica, sans-serif;
+  font-weight: 100;
+  position: absolute;
+  padding-left: 30px;
+  font-size: 19px;
+}
+.worklist {
+  line-height: 1.9em;
+  font-family: Avenir, Helvteica, sans-serif;
+  font-weight: 100;
+  position: absolute;
+  padding-top: 220px;
+  padding-left: 30px;
+  font-size: 15px;
+}
+
+
+.linkimages img {
+  float: left;
+  padding-left: 300px;
+  width: 77%;
+  height: 55%;
+  display: block;
+  margin: 0px auto;
+  margin-right: 310px;
+  margin-top: 30px;
+  justify-content: center;
+  min-width: 200px;
+}
+
+@media only screen and (max-width: 480px) {
+  body {
+    
+    
+  }
+}
+
+.fade-in {
+  animation: fadeIn 3s;
+  
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

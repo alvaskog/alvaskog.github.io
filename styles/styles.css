@@ -96,7 +96,7 @@ p1 {
 
 .linkimages img {
   float: left;
-  padding-left: 50px;
+  padding-left: 300px;
   width: 77%;
   height: auto;
   display: block;
@@ -164,7 +164,7 @@ h3 {
 
 .align {
   float: left;
-  padding-left: 340px;
+  padding-left: 0px;
   margin-bottom: 30px;
 }
 

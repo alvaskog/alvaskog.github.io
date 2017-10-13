@@ -1,11 +1,13 @@
 body {
-  background-color: #fff;
+  background-color: white;
   color: black;
-  margin: 0px;
-  background-image: url("#");
-  background-repeat: no-repeat;
-  background-position: center center;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
 
 h1,
 h2,
@@ -23,86 +25,123 @@ a {
 
 .grid__row {
   display: flex;
+  width: 91.6%;
+  margin: 8.3% auto;
 }
 
 .grid__col--1 {
-  width: 20%;
+  width: 8.3%; /*100/12 = 8.3*/
 }
 
 .grid__col--2 {
-  width: 80%;
+  width: 16.6%; /*(100/12) * 2 = 16.6*/
 }
+
+.grid__col--3 {
+  width: 25%; /*(100/12) * 2 = 16.6*/
+}
+
+.grid__col--8 {
+  width: 66.6%; /*(100/12) * 8 = 66.6*/
+}
+
+.grid__col--9 {
+  width: 75%; /*(100/12) * 9 = 75*/
+}
+
+/*.namn,
+.contact,
+.title,
+.work,
+.worklist,
+.titledescription,
+.back,
+.description {
+   position: fixed;
+}*/
+
+.container__fixed {
+  position: fixed;
+}
+
+.container__fixed--col-2 {
+  width: 16.6%;
+}
+
+.container__fixed--col-3 {
+  width: 25%; /*The 2 columns that enclose this element are 16.6% wide together. Adding this prevents the text from running into the image (in most cases). You need mobile queries later. */
+}
+
 
 .namn {
-  height: 80px;
-  left: 30px;
-  font-size: 35px;
-  top: 7px;
+  font-size: 50px;
+  line-height: 1;
+  padding-bottom: 10px;
 }
 
 .contact {
-  font-size: 16px;
-  padding-left: 30px;
-  padding-top: 90px;
-}
-
-.namn,
-.contact {
-   position: fixed; 
+  font-size: 25px;
+  line-height: 1.5;
 }
 
 .title {
-  padding-left: 30px;
   font-size: 12px;
-  padding-top: 0px;
-  top: 95px;
-  position: fixed;
-  
-}
-
-.worklist {
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-
-a {
-  color: black;
-  background-color: transparent;
-  text-decoration: none ;
-}
-
-a:hover {
-  color: grey;
-  text-decoration: none ;
 }
 
 .work {
-  padding-top: 180px;
-  font-weight: 100;
-  position: absolute;
-  padding-left: 30px;
   font-size: 19px;
+  font-weight: 100;
   }
 
 .worklist {
   line-height: 1.9em;
-  font-weight: 100;
-  position: absolute;
-  padding-top: 220px;
-  padding-left: 30px;
+  list-style: none;
   font-size: 15px;
+  font-weight: 100;
+  margin: 0;
+  padding: 0;
+}
+
+.back {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.titledescription {
+  font-size: 17px;
+  font-weight: 500;
+}
+
+.description {
+  line-height: 1.35em;
+  font-size: 16px;
+  font-weight: 100;
+}
+
+.description,
+.titledescription,
+.cvochletter {
+  padding-bottom: 15px;
+}
+
+a {
+  color: black;
+  text-decoration: none;
+}
+
+a:hover {
+  color: grey;
+  text-decoration: none;
 }
 
 .linkimages img {
-  width: 90%;
+  width: 100%;
   height: auto;
-  margin-top: 30px;
+  margin-bottom: 30px;
 }
 
 .fade-in {
   animation: fadeIn 3s;
-  
 }
 @keyframes fadeIn {
   from {
@@ -113,51 +152,15 @@ a:hover {
   }
 }
 
-.back {
-  font-weight: 500;
-  padding-left: 30px;
-  font-size: 16px;
-  padding-top: 355px;
-  position: fixed;
-  
-}
-
-.titledescription {
-  padding-left: 30px;
-  padding-top: 130px;
-  position: fixed;
-  font-size: 17px;
-  font-weight: 500;
-}
-
-
-.description {
-  font-weight: 100;
-  padding-left: 30px;
-  padding-top: 175px;
-  position: fixed;
-  line-height: 1.35em;
-  font-size: 16px;
-}
-
-
 .align {
   float: left;
   padding-left: 300px;
   margin-bottom: 30px;
 }
 
-.video-container {
-  position: relative;
-  float: left;
+.video-container iframe {
   width: 100%;
-  display: block;
-  margin: 0px auto;
-  margin-right: 30px;
-  margin-top: 30px;
-  padding-left: 0px;
 }
-
 
 .lastimage {
   margin-bottom: 500px;

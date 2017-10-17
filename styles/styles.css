@@ -176,3 +176,21 @@ a:hover {
 .lastimage {
   margin-bottom: 500px;
 }
+
+/*Mobile Styles*/
+
+@media only screen and (max-width: 620px) {
+  .grid__row {
+    flex-wrap: wrap;
+  }
+
+  .grid__col,
+  .container__fixed {
+    width: 100%;
+  }
+
+  .container__fixed {
+    position: relative;
+    padding-bottom: 35px;
+  }
+}
